@@ -1,0 +1,12 @@
+body {
+  background-color: #4B515D;
+}
+
+.card {
+  color: #4B515D; border-radius: 35px;
+}
+
+
+.flex-grow-1 .wind-humid-clouds {
+  font-size: 1rem;
+}

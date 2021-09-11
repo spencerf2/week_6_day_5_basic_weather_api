@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Spencer's Weather</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Spencer's Weather</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <br/>
+  <div class="container">
+    <h1 class="text-center shadow p-3 mb-5 rounded">Spencer's City Weather</h1>
+  </div>
+  
+
+  <br/>
+  <div class="container">
+    <form name="cityNameInfo" class="text-center" id="cityNameInfoForm">
+      <div class="form-floating">
+        <input type="text" name="cityName" class="form-control" id="cityName" placeholder="las+vegas" value="Las Vegas">
+        <label for="cityName">City Name</label>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submitButton" onclick="clearData()">Search</button>
+    </form>
+  </div>
+
+  <section class="vh-80">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-8 col-lg-6 col-xl-4">
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="d-flex city-name">
+
+              </div>
+              <div class="d-flex flex-column text-center mt-5 mb-4 temp-and-group">
+
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="flex-grow-1 wind-humid-clouds">
+
+                </div>
+                <div class="image">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
